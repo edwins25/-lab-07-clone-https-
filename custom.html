@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<<script>
+alert("You won a free house, but you have to design it!")
+var w = prompt("Do you want windows on your house, yes or no?")
+console.log(w)
+var d = prompt("Do you want a door on your house, yes or no?")
+console.log(d)
+var c = prompt("Do you want a chimney on your house, yes or no?")
+console.log(c)
+if ((w==="yes")&&(d==="yes")&&(c==="yes")) {
+    alert("here is a house with everthing on it")
+}
+else if ((w==="no")&&(d==="yes")&&(c==="yes")) {
+  alert("here is that house with a chimney, a door but no windows")
+}
+else if (w==="yes")&&(d==="no")&&(c==="yes")) {
+  alert("here is that house with windows, a chimney but no door")
+}
+else if ((w==="yes")&&(d==="yes")&&(c==="no")) {
+  alert("here is that house with windows, a door but no chimney")
+}
+else if ((w==="no")&&(d==="no")&&(c==="yes")) {
+  alert("here is that house with only a chimney")
+}
+else if ((w==="no")&&(d==="yes")&&(c==="yes")) {
+  alert("here is that house with only a door")
+}
+else if ((w==="yes")&&(d==="no")&&(c==="no")) {
+  alert("here is that house with only a window")
+}
+else if ((w==="no")&&(d==="no")&&(c==="no")) {
+  alert("here is that house with nothing")
+}
+else {
+  alert("no house for you")
+}
+
+</script>
+  </body>
+</html>
